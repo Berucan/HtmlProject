@@ -14,38 +14,50 @@
     <p>Hello World, we are software developers!</p>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-  <div>
+  
     <form id="survey-form">
-      <input id="name" type= "text"required>name <br><br>
-      <input id="email" type = "email"placeholder = "Enter your email" required> email<br><br>
+      <input id="name" type= "text" class = "form-action" required>name <br><br>
+      <input id="email" type = "email"placeholder = "Enter your email" class = "form-action" required> email<br><br>
       <input id="number" type ="number" min = "1" max = "10">contact<br><br>
       
+      <div class = "form-section">
           <p> Which option best describes your current role?</p><br>
         <select id="dropdown" class="form-control" required>
         <option value= "learner"> fulltime </option>
         <option value= "job"> fulltime </option>
           <option value= "others"> others</option>
         </select>
-          
+      </div> 
+
+      <div class = "form-section">
+        <p>What would you like to see improved?</p>
        <label for = "Recommended">
-      <input type ="Radio" name = "Recommended">
-         Recommended</lablel><br><br>
+      <input type ="Radio" name = "Recommended" class = "radio-button">
+         Recommended</label><br><br>
         <label for = "Out dated">
-       <input type ="Radio" name = "Out dated">
+       <input type ="Radio" name = "Out dated" class = "radio-button">
           Out dated</label>
-         
+        </div>
+
+      <div class = "form-section">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
         <label for = "Front-end project" ><br><br>
-        <input type = "checkbox" value = "Front-end projects">
+        <input type = "checkbox" value = "Front-end projects" class = "checkbox-button">
         Front-end project</label>
         <label for = "Back-end project" ><br><br>
-        <input type = "checkbox" value = "Back-end project">
+        <input type = "checkbox" value = "Back-end project" class = "checkbox-button">
          Back-end project</label> 
         <label for = "challenges" ><br><br>
-        <input type = "checkbox" value = "Challenges">
+        <input type = "checkbox" value = "Challenges" class = "checkbox-button">
          Challenges</label> <br><br>
-        
+        </div>
+
+        <div class = "form-section">
         <label for = "textarea">
-        <input type = "text" placeholder="Enter your comment here...">
+        </label>
+      </div>
+        <div class = "form-section">
+        <input type = "text" class = "textarea-input" placeholder="Enter your comment here...">
           textarea </label><br><br>
         <input id="submit" type = "submit" value = "submit"> </b>
       </div>
