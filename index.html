@@ -7,21 +7,44 @@
   </head>
 
   <body>
-    <p>Hello World!</p>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title"> </h1>
+     <p id="description"> </p>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
-    <script  src="js/index.js"></script>
+  <div>
+    <form id="survey-form">
+      <input id="name" type= "text"required>name <br><br>
+      <input id="email" type = "email"placeholder = "Enter your email" required> email<br><br>
+      <input id="number" type ="number" min = "1" max = "10">contact<br><br>
+      
+          <p> Which option best describes your current role?</p><br>
+        <select id="dropdown" class="form-control" required>
+        <option value= "learner"> fulltime </option>
+        <option value= "job"> fulltime </option>
+          <option value= "others"> others</option>
+        </select>
+          
+       <label for = "Recommended">
+      <input type ="Radio" name = "Recommended">
+         Recommended</lablel><br><br>
+        <label for = "Out dated">
+       <input type ="Radio" name = "Out dated">
+          Out dated</label>
+         
+        <label for = "Front-end project" ><br><br>
+        <input type = "checkbox" value = "Front-end projects">
+        Front-end project</label>
+        <label for = "Back-end project" ><br><br>
+        <input type = "checkbox" value = "Back-end project">
+         Back-end project</label> 
+        <label for = "challenges" ><br><br>
+        <input type = "checkbox" value = "Challenges">
+         Challenges</label> <br><br>
+        
+        <label for = "textarea">
+        <input type = "text" placeholder="Enter your comment here...">
+          textarea </label><br><br>
+        <input id="submit" type = "submit" value = "submit"> </b>
+      </div>
+    </form>
   </body>
 </html>
